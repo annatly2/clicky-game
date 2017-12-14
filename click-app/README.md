@@ -1970,7 +1970,7 @@ npm install --save gh-pages
 Alternatively you may use `yarn`:
 
 ```sh
-yarn add gh-pages
+ 
 ```
 
 Add the following scripts in your `package.json`:

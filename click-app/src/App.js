@@ -1,18 +1,31 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import ColorCard from "./components/ColorCard/ColorCard";
+import Navbar from "./components/Navbar/Navbar"
+import colors from "./colors.json";
 import './App.css';
 
 class App extends Component {
+
+  state = {
+    colors
+  };
+
+  // random function here
+
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+        <Navbar></Navbar>
+        {this.state.colors.map(color =>(
+          <ColorCard
+          //randomize function
+          id = {color.id}
+          name = {color.name}
+          image ={color.image}
+          />
+
+      ))}
       </div>
     );
   }
