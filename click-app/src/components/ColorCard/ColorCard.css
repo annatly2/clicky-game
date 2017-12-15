@@ -19,6 +19,11 @@
   width: 100%;
 }
 
+.card > .img-container :hover {
+  /* opacity: .3; */
+  border: 8px solid black;
+}
+
 /* .card{
   font-size: 0;
   width: 225px;
