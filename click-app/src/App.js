@@ -3,9 +3,7 @@ import ColorCard from "./components/ColorCard/ColorCard";
 import Navbar from "./components/Navbar"
 import colors from "./colors.json";
 import "./App.css";
-import "./components/Score/Score"
-//import colorsclicked
-//import topscore
+// import "./components/Score/Score"
 
 class App extends Component {
 
