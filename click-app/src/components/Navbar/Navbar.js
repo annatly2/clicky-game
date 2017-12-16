@@ -6,8 +6,10 @@ const Navbar = props =>(
     <nav className="navbar navbar-default">
     <div className="container-fluid">
       <div className="navbar-header">
-        <div className="navbar-brand">Color Clicky Game</div>
-          <h1>Score: <div className = "score-span">{props.score}</div></h1>
+        <h1>Color Clicky Game</h1>
+        <p>Click on an image to earn points, but don't click on the same image more than once!  If you do, you will lose all your points and start back at zero points.</p>
+          <h2>Current Score: <span className = "score-span">{props.score}</span>
+          </h2>
       </div>
     </div>
   </nav>
