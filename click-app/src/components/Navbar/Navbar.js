@@ -3,20 +3,15 @@ import "./Navbar.css";
 
 const Navbar = props =>(
   <div>
-    <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">Color Clicky Game</a>
-        <ul class="nav navbar-nav">
-          <li>Score:</li>
-          <li>Top Score:</li>
-        </ul>
-
+    <nav className="navbar navbar-default">
+    <div className="container-fluid">
+      <div className="navbar-header">
+        <div className="navbar-brand">Color Clicky Game</div>
+          <h1>Score: <div className = "score-span">{props.score}</div></h1>
       </div>
     </div>
   </nav>
   </div>
-
 );
 
 export default Navbar;
